@@ -1,9 +1,14 @@
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { ROUTES } from "./constants/routes";
+import HomePage from "./pages/HomePage";
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl font-bold underline text-blue-600">
-        Hello, Tailwind CSS with React and Vite!
-      </h1>
+      <Routes>
+        <Route path={ROUTES.HOME} element={<HomePage />} />
+      </Routes>
     </>
   );
 }

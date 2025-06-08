@@ -1,0 +1,51 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.Header__Wrapper {
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+}
+.HomePage__Text {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #000;
+  padding: 3rem 1rem;
+}
+
+.HomePageBody__Wrapper {
+  position: relative;
+}
+
+.HomePageBody__Cap {
+  position: absolute;
+  top: 25rem;
+  left: 10rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #000;
+  font-size: 6rem;
+  filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.2));
+}
+.HomePageBody__Button--1 {
+  position: absolute;
+  top: 35rem;
+  left: 10rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: #b5ead7;
+  font-weight: 600;
+}
+.HomePageBody__Button--2 {
+  position: absolute;
+  top: 35rem;
+  left: 25rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: #b5ead7;
+  font-weight: 600;
+}
