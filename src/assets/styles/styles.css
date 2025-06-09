@@ -18,34 +18,109 @@
 }
 
 .HomePageBody__Wrapper {
-  position: relative;
+}
+.HomePageBody__Content {
+  position: absolute;
+  top: 55vh;
+  left: 15vw;
 }
 
 .HomePageBody__Cap {
-  position: absolute;
-  top: 25rem;
-  left: 10rem;
   text-transform: uppercase;
   font-weight: bolder;
   color: #000;
   font-size: 6rem;
   filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.2));
 }
-.HomePageBody__Button--1 {
-  position: absolute;
-  top: 35rem;
-  left: 10rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  background-color: #b5ead7;
-  font-weight: 600;
+.HommPageBody__Button--Cover {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
-.HomePageBody__Button--2 {
-  position: absolute;
-  top: 35rem;
-  left: 25rem;
+.HomePageBody__Button {
+  margin-right: 1vw;
   text-transform: uppercase;
   font-size: 2rem;
   background-color: #b5ead7;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.HomePageBody__Button:hover {
+  background-color: #a1d8c5;
+}
+
+/* Image */
+
+.HomePageBody__Image--Grill {
+  max-width: 12vw;
+  margin-left: 15vw;
+  margin-top: 3vh;
+  transform: rotate(5deg);
+  filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.3));
+}
+.HomePageBody__Image--Onion {
+  max-width: 20vw;
+  margin-left: 8vw;
+  margin-top: 1vh;
+  transform: rotate(5deg);
+  filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.3));
+}
+.HomePageBody__Image--Noodle {
+  max-width: 20vw;
+  margin-left: 18vw;
+  margin-top: 5vh;
+  transform: rotate(10deg);
+  filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+}
+
+.HomePageBody__Image--Salad {
+  max-width: 25vw;
+  margin-left: 8vw;
+  margin-top: 5vh;
+  transform: rotate(-20deg);
+  filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+}
+
+.HomePageBody__Image--Meat {
+  max-width: 35vw;
+  width: 35vw;
+  margin-left: 58vw;
+  margin-top: 5vh;
+  filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 768px) {
+  .HomePageBody__Image--Grill {
+    max-width: 20vw;
+    margin-left: 10vw;
+    margin-top: 1vh;
+    transform: rotate(5deg);
+    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0.3));
+  }
+  .HomePageBody__Image--Noodle {
+    max-width: 20%;
+    margin-left: 18%;
+    margin-top: 5%;
+    transform: rotate(10deg);
+    filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+  }
+
+  .HomePageBody__Image--Salad {
+    max-width: 25%;
+    margin-left: 8%;
+    margin-top: 5%;
+    transform: rotate(-20deg);
+    filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+  }
+
+  .HomePageBody__Image--Meat {
+    max-width: 35%;
+    width: 35%;
+    margin-left: 58%;
+    margin-top: 5%;
+    filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.3));
+  }
 }
